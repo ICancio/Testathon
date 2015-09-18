@@ -7,7 +7,7 @@
     <Optional feature="gadget-directory">
       <Param name="categories">Confluence</Param>
     </Optional>
-  <Require feature="oauthpopup" />
+  <Require feature="oauthpopup">
     <OAuth>
     	<Service>
     		<Access url="http://config610vm0:8080//plugins/servlet/oauth/access-token" method="POST" />
@@ -15,6 +15,7 @@
     		<Authorization url="http://config610vm0:8080/plugins/servlet/oauth/authorize?oauth_callback=http%3A%2F%2Foauth.gmodules.com%2Fgadgets%2Foauthcallback" />
     	</Service>
     </OAuth>
+    </Require>
   </ModulePrefs>
   <Content type="html">
     <![CDATA[
