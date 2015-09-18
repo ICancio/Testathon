@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
   <ModulePrefs title="GadgetTest"
-  description="My Gadget Is Awesome" 
+  description="My Gadget Is Awezzzome" 
   author="God" 
   author_email="god@illumina.com">
     <Optional feature="gadget-directory">
