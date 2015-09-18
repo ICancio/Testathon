@@ -2,8 +2,8 @@
 <Module>
   <ModulePrefs title="GadgetTest"
   description="My Gadget Is Awezzzome" 
-  author="God" 
-  author_email="god@illumina.com">
+  author="Me" 
+  author_email="me@Somethings.com">
     <Optional feature="gadget-directory">
       <Param name="categories">Confluence</Param>
     </Optional>
