@@ -7,6 +7,14 @@
     <Optional feature="gadget-directory">
       <Param name="categories">Confluence</Param>
     </Optional>
+  <Require feature="oauthpopup" />
+    <OAuth>
+    	<Service>
+    		<Access url="http://config610vm0:8080//plugins/servlet/oauth/access-token" method="POST" />
+    		<Request url="http://config610vm0:8080/plugins/servlet/oauth/request-token" method="POST" />
+    		<Authorization url="http://config610vm0:8080/plugins/servlet/oauth/authorize?oauth_callback=http%3A%2F%2Foauth.gmodules.com%2Fgadgets%2Foauthcallback" />
+    	</Service>
+    </OAuth>
   </ModulePrefs>
   <Content type="html">
     <![CDATA[
@@ -77,7 +85,7 @@
 		  // gadget as a link that the user clicks to begin the approval process.
 		  function fetchData() {
 		    var params = {};
-		    url = "http://localhost:8070/rest/gadget/1.0/issueTable/jql?jql=";
+		    url = "http://config610vm0:8080/rest/gadget/1.0/issueTable/jql?jql=";
 		    url = url + escape("assignee = currentUser() AND resolution = unresolved ORDER BY priority DESC, created ASC");
 
 		    params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
