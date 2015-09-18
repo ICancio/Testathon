@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Testing"
+  <ModulePrefs title="GadgetTest"
   description="My Gadget Is Awesome" 
   author="God" 
   author_email="god@illumina.com">
